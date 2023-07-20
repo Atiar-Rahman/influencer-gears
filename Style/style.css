@@ -204,40 +204,32 @@ body{
 }
 
 
+footer{
+    background-color: #0A0826;
+}
+.footer{
+    color: #FFF;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.footer ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #c3bebe;
+    margin: 40px 0px;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer ul li{
+    list-style: none;
+}
 
 
 
