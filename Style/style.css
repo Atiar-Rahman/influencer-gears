@@ -95,19 +95,45 @@ body{
 
 .influencer{
     color: #3A3A3A;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 
 
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6rem;
+}
+
+.main-camera{
+    background-image: url('../images/Circle\ design.svg');
+}
+
+.btn-primary{
+    padding: 0.8rem 1.5rem;
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    margin-top: 1.6rem;
+}
 
 
+.Assets-container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    border-top: 1px solid bisque;
+    border-bottom: 1px solid bisque;
+    margin:  0.4rem 7rem;
+    padding: 5px;
+}
 
-
-
-
-
-
+.Assets-container li{
+    list-style: none;
+}
 
 
 
@@ -170,12 +196,17 @@ body{
 /* for andriad :placeholder-shown */
 
 @media screen and (max-width: 576px) {
-    .nav-bar, .menus ul{
+    .nav-bar, .menus ul, .banner-container{
         flex-direction: column;
     }
 
     .menus ul li{
         margin-bottom: 30px;
+    }
+    .Assets-container ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-content: center;
     }
 }
 
@@ -193,8 +224,12 @@ body{
 /* medium device */
 
 @media screen and (min-width: 577px) and (max-width: 900px) {
-    .nav-bar{
+    .nav-bar, .banner-container{
         flex-direction: column;
         gap: 30px;
+    }
+    .Assets-container ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 }
